@@ -16,7 +16,9 @@ const FilteringModal = () => {
 
     return (
         <section>
+
             <button onClick={() => setIsOpen(!isOpen)} className="text-white"><BsThreeDotsVertical /></button>
+
             {
                 isOpen && <div className="w-72 p-4 h-48 absolute top-24 -right-1 rounded-l-md mt-4 border border-2 border-white animate__animated animate__fadeInRight z-50" style={{ background: "#FFD9C0" }}>
 
