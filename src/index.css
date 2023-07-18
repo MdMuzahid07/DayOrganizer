@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* customScrollbar.css */
+
+/* Custom scrollbar for WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #FAF0D7;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #FFD9C0;
+  }
+  
