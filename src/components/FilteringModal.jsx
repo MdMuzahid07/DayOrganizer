@@ -18,7 +18,7 @@ const FilteringModal = () => {
         <section>
             <button onClick={() => setIsOpen(!isOpen)} className="text-white"><BsThreeDotsVertical /></button>
             {
-                isOpen && <div className="w-72 p-4 h-48 absolute top-24 -right-1 rounded-l-md mt-4 border border-2 border-white animate__animated animate__fadeInRight" style={{ background: "#FFD9C0" }}>
+                isOpen && <div className="w-72 p-4 h-48 absolute top-24 -right-1 rounded-l-md mt-4 border border-2 border-white animate__animated animate__fadeInRight z-50" style={{ background: "#FFD9C0" }}>
 
                     <form onSubmit={handleSubmit} className="flex items-center gap-2">
                         <input onChange={handleSearch} value={search} className="bg-white placeholder-red-300 rounded-full w-40 px-3" placeholder="Find your plan" type="text" name="" id="" />

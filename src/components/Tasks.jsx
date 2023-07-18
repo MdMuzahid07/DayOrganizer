@@ -2,7 +2,7 @@ import Todo from "./Todo";
 
 const Tasks = () => {
     return (
-        <main className="h-full w-full px-3 py-5 overflow-y-scroll">
+        <main className="h-full w-full px-3 py-5 overflow-y-scroll pb-96">
 
             <Todo />
             <Todo />
