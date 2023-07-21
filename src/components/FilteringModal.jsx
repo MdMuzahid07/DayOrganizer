@@ -12,6 +12,7 @@ const FilteringModal = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        window.alert("wow,great one!")
     };
 
     return (
