@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div>
-      <div className="min-h-screen min-w-full flex items-center justify-center bg-[url('https://img.freepik.com/free-photo/3d-illustration-pen-putting-blue-ticks-paper_107791-15675.jpg?w=996&t=st=1689690145~exp=1689690745~hmac=ee326e4b09aa8eb40882b4dc947417c78d1ec3b4055c8fa3f443ed2e667dde25')] bg-center bg-cover object-fit bg-no-repeat px-3 md:px-0">
-        <div className="animate__animated animate__jackInTheBox w-96 rounded-md border border-2 border-white relative overflow-hidden" style={{ background: "#FAF0D7", minHeight: "600px", height: "600px" }}>
+      <div className="min-h-screen min-w-full flex items-center justify-center bg-[url('https://img.freepik.com/free-photo/computer-screens-desk-empty-software-it-agency-office-computers-background-running-programming-code-data-algorithms-neural-network-servers-cloud-computing-data-room_482257-33530.jpg?w=1380&t=st=1690654012~exp=1690654612~hmac=24aaddcca4e5dc11b70f1d6ef79dbe66a8472ff5a9ecb2c9d927419631e9bae5')] bg-center bg-cover object-fit bg-no-repeat px-3 md:px-0">
+        <div className="animate__animated animate__flipInY w-96 rounded-md border border-2 border-white relative overflow-hidden" style={{ background: "#FAF0D7", minHeight: "600px", height: "600px" }}>
 
           {/* // header area start here ==========================> */}
           <Header />

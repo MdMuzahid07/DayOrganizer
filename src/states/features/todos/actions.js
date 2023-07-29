@@ -1,4 +1,4 @@
-import { ADDED, CLEARCOMPLETEDTASKS, COLORSELECTED, COMPLETEALLTASKS, TOGGLED } from "./actionTypes"
+import { ADDED, CLEARCOMPLETEDTASKS, COLORSELECTED, COMPLETEALLTASKS, DELETED, TOGGLED } from "./actionTypes"
 
 
 
@@ -12,6 +12,13 @@ export const added = (todoTitle, todoText) => {
     }
 };
 
+
+export const deleted = (todoId) => {
+    return {
+        type: DELETED,
+        payload: todoId
+    }
+};
 
 
 // this action for todo app complete, incomplete toggled
