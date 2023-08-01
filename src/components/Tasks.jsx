@@ -4,6 +4,8 @@ import Todo from "./Todo";
 const Tasks = () => {
     const todos = useSelector(state => state.todos);
 
+    console.log(todos);
+
     return (
         <main className="h-full w-full px-3 py-5 overflow-y-scroll pb-96">
 

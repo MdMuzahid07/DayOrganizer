@@ -12,6 +12,7 @@ const todoReducer = (state = todoInitialState, action) => {
     switch (action.type) {
         case ADDED:
             return [
+                ...state,
                 {
                     _id: newTodoIdGenerator(state),
                     todoText: action.payload.todoText,

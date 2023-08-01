@@ -1,22 +1,24 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { added } from "../states/features/todos/actions";
 
 const Footer = () => {
-    const [inputValue, setInputValue] = useState();
-
-    const handleInput = (e) => {
-        setInputValue(e.target.value);
-    };
+    const [todoTitle, setTodoTitle] = useState("Todo Title");
+    const [todoText, setTodoText] = useState("Write Your Day");
+    const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        window.alert("working?")
+        dispatch(added(todoTitle, todoText))
     };
 
     return (
-        <form onSubmit={handleSubmit} className="h-14 px-3 py-1 absolute bottom-0 w-full rounded-b-md flex items-center justify-between" style={{ background: "#CCEEBC" }}>
-            <input onChange={handleInput} value={inputValue} className="bg-white placeholder-red-300 rounded-full w-72 px-4 py-2" placeholder="Write your day" type="text" name="" id="" />
-
-            <button className="px-4 py-2 rounded-full text-white font-bold" style={{ background: "#8CC0DE" }}>Add</button>
+        <form onSubmit={handleSubmit} className="h-24 px-3 py-1 absolute bottom-0 w-full rounded-b-md flex items-center justify-between" style={{ background: "#CCEEBC" }}>
+            <div>
+                <input onChange={(e) => setTodoTitle(e.target.value)} value={todoTitle} className="bg-white rounded-lg w-72 px-4 mb-2 py-1" type="text" name="" id="" />
+                <input onChange={(e) => setTodoText(e.target.value)} value={todoText} className="bg-white rounded-lg w-72 px-4 py-1" type="text" name="" id="" />
+            </div>
+            <button type="submit" className="px-4 py-6 rounded-2xl text-white font-bold" style={{ background: "#8CC0DE" }}>Add</button>
         </form>
     );
 };
